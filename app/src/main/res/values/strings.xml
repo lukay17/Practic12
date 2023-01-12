@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Practica 12</string>
+    <string name="title">Los 4 Mejores Hoteles del Mundo</string>
+    <string name="hotel1"><![CDATA[Tulemar Bungalows & Villas]]></string>
+    <string name="hotel2">Hotel Colline de France</string>
+    <string name="hotel3">" Ikos Aria"</string>
+    <string name="hotel4">Romance Istanbul Hotel</string>
+</resources>

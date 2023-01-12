@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/title"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/text_hotel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        android:text="@string/hotel1"
+        />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/text_hotel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_hotel1"
+        android:text="@string/hotel2"
+        />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/text_hotel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_hotel2"
+        android:text="@string/hotel3"
+        />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/text_hotel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_hotel3"
+        android:text="@string/hotel4"
+        />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/text_hotel4"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:uiZoomControls="true"
+        map:uiRotateGestures="true"
+        map:cameraTilt="30"
+        map:cameraZoom="13"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
